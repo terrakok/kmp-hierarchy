@@ -2,6 +2,9 @@
 ### Gradle Plugin to investigate KMP project's hierarchy
 
 --------------
+⚠️⚠️⚠️ The plugin is penting an approval on the gradle plugins repository ⚠️⚠️⚠️
+
+--------------
 This open-source Gradle plugin aims to help developers investigate 
 the HMPP structure of Kotlin Multiplatform (KMP) source sets with ease.
 By graphically visualizing the relationships between source sets and clearly indicating their hierarchy, 
