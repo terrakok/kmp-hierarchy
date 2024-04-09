@@ -30,7 +30,7 @@ After successful installation, the plugin will be ready to use.
 ./gradlew :printHierarchy
 ```
 Example of SVG output for [compose-multiplatform-core/compose/ui/ui](https://github.com/JetBrains/compose-multiplatform-core/tree/jb-main/compose/ui/ui) module:
-![]()
+![](https://raw.githubusercontent.com/terrakok/kmp-hierarchy/master/media/compose-ui-ui.svg)
 
 --------------
 ## Configuration
