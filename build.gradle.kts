@@ -14,9 +14,14 @@ group = "io.terrakok.github"
 version = "1.0"
 
 gradlePlugin {
+    website = "https://github.com/terrakok/kmp-hierarchy"
+    vcsUrl = "https://github.com/terrakok/kmp-hierarchy"
     plugins {
         create("KmpHierarchyPlugin") {
             id = "io.terrakok.github.kmp-hierarchy"
+            displayName = "KMP hierarchy plugin"
+            description = "Simple gradle plugin for printing KMP source sets hierarchy."
+            tags = listOf("kotlin", "kmp", "multiplatform", "debug", "build")
             implementationClass = "io.terrakok.github.KmpHierarchyPlugin"
         }
     }
