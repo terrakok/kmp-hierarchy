@@ -2,7 +2,7 @@
 ### Gradle Plugin to investigate KMP project's hierarchy
 
 --------------
-⚠️⚠️⚠️ The plugin is penting an approval on the gradle plugins repository ⚠️⚠️⚠️
+⚠️⚠️⚠️ The plugin is pending an approval on the gradle plugins repository ⚠️⚠️⚠️
 
 --------------
 This open-source Gradle plugin aims to help developers investigate 
