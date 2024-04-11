@@ -22,7 +22,7 @@ the plugin simplifies understanding and maintaining complex KMP projects.
 To use KMP-hierarchy plugin, include the following in your build.gradle(.kts) file:
 ```kotlin
 plugins {
-    id("io.terrakok.github.kmp-hierarchy") version "1.0"
+    id("io.terrakok.github.kmp-hierarchy") version "1.1"
 }
 ```
 
@@ -32,8 +32,8 @@ After successful installation, the plugin will be ready to use.
 ```text
 ./gradlew :printHierarchy
 ```
-Example of SVG output for [compose-multiplatform-core/compose/ui/ui](https://github.com/JetBrains/compose-multiplatform-core/tree/jb-main/compose/ui/ui) module:
-![](https://raw.githubusercontent.com/terrakok/kmp-hierarchy/master/media/compose-ui-ui.svg)
+Example of SVG output for [compose-multiplatform/components/resources/library](https://github.com/JetBrains/compose-multiplatform/blob/master/components/resources/library/build.gradle.kts) module:
+![](https://raw.githubusercontent.com/terrakok/kmp-hierarchy/master/media/resources-library.svg)
 
 --------------
 ## Configuration

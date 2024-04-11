@@ -1,0 +1,210 @@
+<svg width="866px" height="404px"
+ viewBox="0.00 0.00 866.49 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 400.0)">
+<title>resources&#45;library</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-400 862.49,-400 862.49,4 -4,4"/>
+<!-- commonMain -->
+<g id="node1" class="node">
+<title>commonMain</title>
+<ellipse fill="none" stroke="black" cx="396.44" cy="-378" rx="65.43" ry="18"/>
+<text text-anchor="middle" x="396.44" y="-373.8" font-family="Times,serif" font-size="14.00">commonMain</text>
+</g>
+<!-- skikoMain -->
+<g id="node2" class="node">
+<title>skikoMain</title>
+<ellipse fill="none" stroke="black" cx="464.44" cy="-306" rx="52.19" ry="18"/>
+<text text-anchor="middle" x="464.44" y="-301.8" font-family="Times,serif" font-size="14.00">skikoMain</text>
+</g>
+<!-- commonMain&#45;&#45;skikoMain -->
+<g id="edge1" class="edge">
+<title>commonMain&#45;&#45;skikoMain</title>
+<path fill="none" stroke="black" d="M412.56,-360.41C423.4,-349.25 437.63,-334.6 448.44,-323.47"/>
+</g>
+<!-- blockingMain -->
+<g id="node3" class="node">
+<title>blockingMain</title>
+<ellipse fill="none" stroke="black" cx="328.44" cy="-306" rx="65.43" ry="18"/>
+<text text-anchor="middle" x="328.44" y="-301.8" font-family="Times,serif" font-size="14.00">blockingMain</text>
+</g>
+<!-- commonMain&#45;&#45;blockingMain -->
+<g id="edge2" class="edge">
+<title>commonMain&#45;&#45;blockingMain</title>
+<path fill="none" stroke="black" d="M380.33,-360.41C369.49,-349.25 355.26,-334.6 344.44,-323.47"/>
+</g>
+<!-- nativeMain -->
+<g id="node4" class="node">
+<title>nativeMain</title>
+<ellipse fill="none" stroke="black" cx="375.44" cy="-234" rx="55.03" ry="18"/>
+<text text-anchor="middle" x="375.44" y="-229.8" font-family="Times,serif" font-size="14.00">nativeMain</text>
+</g>
+<!-- skikoMain&#45;&#45;nativeMain -->
+<g id="edge8" class="edge">
+<title>skikoMain&#45;&#45;nativeMain</title>
+<path fill="none" stroke="black" d="M444.25,-289.12C429.68,-277.66 410.11,-262.26 395.56,-250.82"/>
+</g>
+<!-- desktopMain -->
+<g id="node6" class="node">
+<title>desktopMain</title>
+<ellipse fill="none" stroke="black" cx="464.44" cy="-162" rx="61.42" ry="18"/>
+<text text-anchor="middle" x="464.44" y="-157.8" font-family="Times,serif" font-size="14.00">desktopMain</text>
+</g>
+<!-- skikoMain&#45;&#45;desktopMain -->
+<g id="edge9" class="edge">
+<title>skikoMain&#45;&#45;desktopMain</title>
+<path fill="none" stroke="black" d="M464.44,-287.87C464.44,-260.58 464.44,-207.52 464.44,-180.19"/>
+</g>
+<!-- webMain -->
+<g id="node8" class="node">
+<title>webMain</title>
+<ellipse fill="none" stroke="black" cx="581.44" cy="-234" rx="47.51" ry="18"/>
+<text text-anchor="middle" x="581.44" y="-229.8" font-family="Times,serif" font-size="14.00">webMain</text>
+</g>
+<!-- skikoMain&#45;&#45;webMain -->
+<g id="edge7" class="edge">
+<title>skikoMain&#45;&#45;webMain</title>
+<path fill="none" stroke="black" d="M489.54,-289.98C509.55,-278.01 537.4,-261.35 557.19,-249.51"/>
+</g>
+<!-- blockingMain&#45;&#45;nativeMain -->
+<g id="edge3" class="edge">
+<title>blockingMain&#45;&#45;nativeMain</title>
+<path fill="none" stroke="black" d="M339.82,-288.05C347.21,-277.05 356.8,-262.76 364.17,-251.79"/>
+</g>
+<!-- jvmAndAndroidMain -->
+<g id="node5" class="node">
+<title>jvmAndAndroidMain</title>
+<ellipse fill="none" stroke="black" cx="207.44" cy="-234" rx="95.01" ry="18"/>
+<text text-anchor="middle" x="207.44" y="-229.8" font-family="Times,serif" font-size="14.00">jvmAndAndroidMain</text>
+</g>
+<!-- blockingMain&#45;&#45;jvmAndAndroidMain -->
+<g id="edge4" class="edge">
+<title>blockingMain&#45;&#45;jvmAndAndroidMain</title>
+<path fill="none" stroke="black" d="M301.59,-289.46C281.96,-278.11 255.39,-262.74 235.48,-251.22"/>
+</g>
+<!-- appleMain -->
+<g id="node9" class="node">
+<title>appleMain</title>
+<ellipse fill="none" stroke="black" cx="332.44" cy="-162" rx="52.17" ry="18"/>
+<text text-anchor="middle" x="332.44" y="-157.8" font-family="Times,serif" font-size="14.00">appleMain</text>
+</g>
+<!-- nativeMain&#45;&#45;appleMain -->
+<g id="edge10" class="edge">
+<title>nativeMain&#45;&#45;appleMain</title>
+<path fill="none" stroke="black" d="M365.04,-216.05C358.27,-205.05 349.5,-190.76 342.76,-179.79"/>
+</g>
+<!-- jvmAndAndroidMain&#45;&#45;desktopMain -->
+<g id="edge5" class="edge">
+<title>jvmAndAndroidMain&#45;&#45;desktopMain</title>
+<path fill="none" stroke="black" d="M259.45,-218.83C306.97,-205.89 376.44,-186.97 421.05,-174.82"/>
+</g>
+<!-- androidMain -->
+<g id="node7" class="node">
+<title>androidMain</title>
+<ellipse fill="none" stroke="black" cx="201.44" cy="-162" rx="60.84" ry="18"/>
+<text text-anchor="middle" x="201.44" y="-157.8" font-family="Times,serif" font-size="14.00">androidMain</text>
+</g>
+<!-- jvmAndAndroidMain&#45;&#45;androidMain -->
+<g id="edge6" class="edge">
+<title>jvmAndAndroidMain&#45;&#45;androidMain</title>
+<path fill="none" stroke="black" d="M205.96,-215.7C205.03,-204.85 203.84,-190.92 202.91,-180.1"/>
+</g>
+<!-- wasmJsMain -->
+<g id="node15" class="node">
+<title>wasmJsMain</title>
+<ellipse fill="none" stroke="black" cx="698.44" cy="-162" rx="61.41" ry="18"/>
+<text text-anchor="middle" x="698.44" y="-157.8" font-family="Times,serif" font-size="14.00">wasmJsMain</text>
+</g>
+<!-- webMain&#45;&#45;wasmJsMain -->
+<g id="edge16" class="edge">
+<title>webMain&#45;&#45;wasmJsMain</title>
+<path fill="none" stroke="black" d="M605.69,-218.5C625.23,-206.8 652.65,-190.4 672.61,-178.46"/>
+</g>
+<!-- jsMain -->
+<g id="node16" class="node">
+<title>jsMain</title>
+<ellipse fill="none" stroke="black" cx="581.44" cy="-162" rx="37.72" ry="18"/>
+<text text-anchor="middle" x="581.44" y="-157.8" font-family="Times,serif" font-size="14.00">jsMain</text>
+</g>
+<!-- webMain&#45;&#45;jsMain -->
+<g id="edge17" class="edge">
+<title>webMain&#45;&#45;jsMain</title>
+<path fill="none" stroke="black" d="M581.44,-215.7C581.44,-204.85 581.44,-190.92 581.44,-180.1"/>
+</g>
+<!-- macosMain -->
+<g id="node10" class="node">
+<title>macosMain</title>
+<ellipse fill="none" stroke="black" cx="257.44" cy="-90" rx="56.18" ry="18"/>
+<text text-anchor="middle" x="257.44" y="-85.8" font-family="Times,serif" font-size="14.00">macosMain</text>
+</g>
+<!-- appleMain&#45;&#45;macosMain -->
+<g id="edge11" class="edge">
+<title>appleMain&#45;&#45;macosMain</title>
+<path fill="none" stroke="black" d="M315.05,-144.76C302.93,-133.46 286.84,-118.44 274.74,-107.15"/>
+</g>
+<!-- iosMain -->
+<g id="node11" class="node">
+<title>iosMain</title>
+<ellipse fill="none" stroke="black" cx="499.44" cy="-90" rx="42.88" ry="18"/>
+<text text-anchor="middle" x="499.44" y="-85.8" font-family="Times,serif" font-size="14.00">iosMain</text>
+</g>
+<!-- appleMain&#45;&#45;iosMain -->
+<g id="edge12" class="edge">
+<title>appleMain&#45;&#45;iosMain</title>
+<path fill="none" stroke="black" d="M364.25,-147.67C394.82,-134.86 440.62,-115.66 470.27,-103.23"/>
+</g>
+<!-- macosX64Main -->
+<g id="node17" class="node">
+<title>macosX64Main</title>
+<ellipse fill="none" stroke="black" cx="257.44" cy="-18" rx="72.94" ry="18"/>
+<text text-anchor="middle" x="257.44" y="-13.8" font-family="Times,serif" font-size="14.00">macosX64Main</text>
+</g>
+<!-- macosMain&#45;&#45;macosX64Main -->
+<g id="edge18" class="edge">
+<title>macosMain&#45;&#45;macosX64Main</title>
+<path fill="none" stroke="black" d="M257.44,-71.7C257.44,-60.85 257.44,-46.92 257.44,-36.1"/>
+</g>
+<!-- macosArm64Main -->
+<g id="node18" class="node">
+<title>macosArm64Main</title>
+<ellipse fill="none" stroke="black" cx="83.44" cy="-18" rx="83.39" ry="18"/>
+<text text-anchor="middle" x="83.44" y="-13.8" font-family="Times,serif" font-size="14.00">macosArm64Main</text>
+</g>
+<!-- macosMain&#45;&#45;macosArm64Main -->
+<g id="edge19" class="edge">
+<title>macosMain&#45;&#45;macosArm64Main</title>
+<path fill="none" stroke="black" d="M223.9,-75.5C194.47,-63.66 151.72,-46.47 121.12,-34.16"/>
+</g>
+<!-- iosX64Main -->
+<g id="node12" class="node">
+<title>iosX64Main</title>
+<ellipse fill="none" stroke="black" cx="407.44" cy="-18" rx="59.13" ry="18"/>
+<text text-anchor="middle" x="407.44" y="-13.8" font-family="Times,serif" font-size="14.00">iosX64Main</text>
+</g>
+<!-- iosMain&#45;&#45;iosX64Main -->
+<g id="edge13" class="edge">
+<title>iosMain&#45;&#45;iosX64Main</title>
+<path fill="none" stroke="black" d="M479.48,-73.81C464.37,-62.31 443.66,-46.56 428.33,-34.89"/>
+</g>
+<!-- iosSimulatorArm64Main -->
+<g id="node13" class="node">
+<title>iosSimulatorArm64Main</title>
+<ellipse fill="none" stroke="black" cx="592.44" cy="-18" rx="108.26" ry="18"/>
+<text text-anchor="middle" x="592.44" y="-13.8" font-family="Times,serif" font-size="14.00">iosSimulatorArm64Main</text>
+</g>
+<!-- iosMain&#45;&#45;iosSimulatorArm64Main -->
+<g id="edge14" class="edge">
+<title>iosMain&#45;&#45;iosSimulatorArm64Main</title>
+<path fill="none" stroke="black" d="M519.62,-73.81C534.58,-62.55 554.96,-47.22 570.35,-35.63"/>
+</g>
+<!-- iosArm64Main -->
+<g id="node14" class="node">
+<title>iosArm64Main</title>
+<ellipse fill="none" stroke="black" cx="788.44" cy="-18" rx="70.08" ry="18"/>
+<text text-anchor="middle" x="788.44" y="-13.8" font-family="Times,serif" font-size="14.00">iosArm64Main</text>
+</g>
+<!-- iosMain&#45;&#45;iosArm64Main -->
+<g id="edge15" class="edge">
+<title>iosMain&#45;&#45;iosArm64Main</title>
+<path fill="none" stroke="black" d="M535.46,-80.28C586.91,-67.82 681.59,-44.88 739.39,-30.88"/>
+</g>
+</g>
+</svg>

@@ -21,6 +21,8 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
 import org.jetbrains.kotlin.gradle.plugin.KotlinCompilation
 import org.jetbrains.kotlin.gradle.plugin.KotlinPlatformType
 import org.jetbrains.kotlin.gradle.plugin.KotlinSourceSet
+import org.jetbrains.kotlin.gradle.plugin.KotlinTarget
+import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinAndroidTarget
 import java.io.File
 import java.io.Serializable
 import javax.inject.Inject
@@ -44,16 +46,15 @@ class KmpHierarchyPlugin : Plugin<Project> {
                 task.withTestHierarchy.set(config.map { it.withTestHierarchy })
                 task.targetHierarchy.set(
                     project.provider {
-                        val standardCompilations = listOf(KotlinCompilation.MAIN_COMPILATION_NAME, KotlinCompilation.TEST_COMPILATION_NAME)
                         kotlinExt.targets
                             .filter { target -> target.platformType != KotlinPlatformType.common }
                             .flatMap { t -> t.compilations }
-                            .filter { compilation -> compilation.name in standardCompilations }
                             .map { compilation ->
                                 TargetInfo(
                                     compilation.target.targetName,
                                     compilation.name,
                                     compilation.allKotlinSourceSets
+                                        .filterNot { sourceSet -> isSpecificAndroidSourceSet(compilation, sourceSet) }
                                         .reversed()
                                         .associate { sourceSet -> sourceSet.name to sourceSet.parents() }
                                 )
@@ -77,6 +78,14 @@ private fun KotlinSourceSet.parents(): Set<String> {
                 remove(KotlinSourceSet.COMMON_TEST_SOURCE_SET_NAME)
             }
         }
+}
+
+private val onlyCommon = setOf(KotlinSourceSet.COMMON_MAIN_SOURCE_SET_NAME, KotlinSourceSet.COMMON_TEST_SOURCE_SET_NAME)
+private fun isSpecificAndroidSourceSet(compilation: KotlinCompilation<*>, sourceSet: KotlinSourceSet): Boolean {
+    if (compilation.target !is KotlinAndroidTarget) return false
+    if (sourceSet != compilation.defaultSourceSet) return false
+    val parents = sourceSet.parents()
+    return parents.size == 1 && parents.single() in onlyCommon
 }
 
 abstract class KmpHierarchyConfig @Inject constructor(project: Project) {
@@ -110,7 +119,9 @@ internal data class TargetInfo(
     val targetName: String,
     val compilationName: String,
     val sourceSetsHierarchy: Map<String, Set<String>>
-) : Serializable
+) : Serializable {
+    val isTest = compilationName.contains("test", ignoreCase = true)
+}
 
 internal abstract class PrintHmppTask : DefaultTask() {
     @get:Input
@@ -134,9 +145,7 @@ internal abstract class PrintHmppTask : DefaultTask() {
         val formats = fileFormats.get()
         val withTest = withTestHierarchy.get()
 
-        val hierarchy = targetHierarchy.get().filter { info ->
-            withTest || info.compilationName != KotlinCompilation.TEST_COMPILATION_NAME
-        }
+        val hierarchy = targetHierarchy.get().filter { info -> withTest || !info.isTest }
 
         val dir = outputDir.get().asFile
         dir.deleteRecursively()
