@@ -2,9 +2,6 @@
 ### Gradle Plugin to investigate KMP project's hierarchy
 
 --------------
-⚠️⚠️⚠️ The plugin is pending an approval on the gradle plugins repository ⚠️⚠️⚠️
-
---------------
 This open-source Gradle plugin aims to help developers investigate 
 the HMPP structure of Kotlin Multiplatform (KMP) source sets with ease.
 By graphically visualizing the relationships between source sets and clearly indicating their hierarchy, 
@@ -22,7 +19,7 @@ the plugin simplifies understanding and maintaining complex KMP projects.
 To use KMP-hierarchy plugin, include the following in your build.gradle(.kts) file:
 ```kotlin
 plugins {
-    id("io.github.terrakok.kmp-hierarchy").version("1.0")
+    id("io.github.terrakok.kmp-hierarchy").version("1.1")
 }
 ```
 
@@ -41,7 +38,7 @@ Example of SVG output for [compose-multiplatform/components/resources/library](h
 ```kotlin
 plugins {
     id("org.jetbrains.kotlin.multiplatform").version("1.9.23")
-    id("io.github.terrakok.kmp-hierarchy").version("1.0")
+    id("io.github.terrakok.kmp-hierarchy").version("1.1")
 }
 
 kotlin {
