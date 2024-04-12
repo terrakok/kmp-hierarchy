@@ -10,7 +10,7 @@ dependencies {
     implementation("org.graalvm.js:js:20.0.0")
 }
 
-group = "io.terrakok.github"
+group = "io.github.terrakok"
 version = "1.1"
 
 gradlePlugin {
@@ -18,11 +18,11 @@ gradlePlugin {
     vcsUrl = "https://github.com/terrakok/kmp-hierarchy"
     plugins {
         create("KmpHierarchyPlugin") {
-            id = "io.terrakok.github.kmp-hierarchy"
+            id = "io.github.terrakok.kmp-hierarchy"
             displayName = "KMP hierarchy plugin"
             description = "Simple gradle plugin for printing KMP source sets hierarchy."
             tags = listOf("kotlin", "kmp", "multiplatform", "debug", "build")
-            implementationClass = "io.terrakok.github.KmpHierarchyPlugin"
+            implementationClass = "io.github.terrakok.KmpHierarchyPlugin"
         }
     }
 }
