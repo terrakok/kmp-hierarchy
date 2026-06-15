@@ -8,6 +8,11 @@ By graphically visualizing the relationships between source sets and clearly ind
 the plugin simplifies understanding and maintaining complex KMP projects.
 
 --------------
+⚠️ This project hasn’t been updated in a while because it’s stable and does its job. ⚠️  
+There’s no need to turn a simple utility into another framework for the sake of change.  
+Keeping it small and focused — [KISS](https://en.wikipedia.org/wiki/KISS_principle)! 💋
+
+--------------
 ## Features
 - Graphical visualization of dependencies between source sets
 - Seamless Integration with Gradle builds
